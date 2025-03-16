@@ -1,25 +1,25 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Garante que padding e border não afetem o tamanho total dos elementos */
-    font-family: sans-serif; /* Fonte padrão para melhor legibilidade */
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-    background-color: #f4f4f4; /* Cor de fundo leve para o corpo da página */
+    background-color: #f4f4f4; 
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* Altura do cabeçalho */
+    height: 100px; 
     background-color: brown;
-    color: white; /* Cor do texto no cabeçalho */
+    color: white;
 }
 
 header h1 {
-    font-size: 2em; /* Tamanho da fonte do título no cabeçalho */
+    font-size: 2em; 
 }
 
 main {
@@ -35,7 +35,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-    width: 300px; /* Largura do campo de entrada */
+    width: 300px;
 }
 
 #searchButton {
@@ -49,17 +49,17 @@ main {
 }
 
 #searchButton:hover {
-    background-color: #a0522d; /* Cor mais escura no hover */
+    background-color: #a0522d;
 }
 
 #result {
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 400px; /* Largura da div de resultados */
-    display: none; /* Oculta a div por padrão */
+    width: 400px; 
+    display: none;
 }
 
 #result h2 {

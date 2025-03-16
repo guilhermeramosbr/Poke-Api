@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pokemonNameDisplay.textContent = 'Carregando...';
             pokemonImage.src = '';
             pokemonTypes.textContent = '';
-            resultDiv.style.backgroundColor = ''; // Remove a cor de fundo anterior
+            resultDiv.style.backgroundColor = '';
 
             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
             if (!response.ok) {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const types = data.types.map(t => t.type.name);
             pokemonTypes.textContent = `Tipos: ${types.join(', ')}`;
 
-            // Define a cor de fundo com base no primeiro tipo do Pokémon
+           
             if (types.length > 0 && typeColors[types[0]]) {
                 resultDiv.style.backgroundColor = typeColors[types[0]];
             }
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pokemonNameDisplay.textContent = '';
             pokemonImage.src = '';
             pokemonTypes.textContent = error.message;
-            resultDiv.style.backgroundColor = ''; // Remove a cor de fundo em caso de erro
+            resultDiv.style.backgroundColor = ''; 
         }
     });
 });
