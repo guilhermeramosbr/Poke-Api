@@ -1,4 +1,3 @@
-Claro! Aqui está um modelo de README para o seu projeto PokéAPI, adaptado tanto para o GitHub quanto para o LinkedIn:
 
 Título do Projeto:
 
